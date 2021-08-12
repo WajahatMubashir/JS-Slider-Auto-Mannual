@@ -19,6 +19,7 @@ function showSlides() {
     setTimeout(showSlides, 6000);
 }
 
+//FOR BUTTONS
 function plusSlides(position) {
     slideIndex += position;
     if (slideIndex> slides.length) {slideIndex = 1}
@@ -33,7 +34,16 @@ function plusSlides(position) {
     dots[slideIndex-1].className += " active";
 }
 
+//LOGIC USING IN BUTTONS AND DOTS
+// 1
+// 1
+// 3
+// 1 - 1=0
+// 2 - 1 = 1
+// 3- 1 = 2
 
+
+//FOR DOTS
 function currentSlide(index) {
     if (index> slides.length) {index = 1}
     else if(index<1){index = slides.length}
